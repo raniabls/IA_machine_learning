@@ -72,8 +72,3 @@ IA_machine_learning/
 │   └── README.md
 
 ---
-
-## 🚀 How to Use
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/raniabls/ai-course-projects.git

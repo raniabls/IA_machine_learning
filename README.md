@@ -1,67 +1,79 @@
-# Real Estate Linear Regression 🏡📈
+# Artificial Intelligence Course Projects 🤖📊
 
-This repository contains three projects focused on applying **Linear Regression** methods to predict real estate prices based on features such as surface area and location (city/countryside).
-
----
-
-## 📂 Projects Included
-
-### 1. Simple Linear Regression
-- Dataset: Price vs Surface Area
-- Implemented **y = ax + b** model.
-- Steps:
-  - Data preparation.
-  - Visualization: scatter plot + regression line.
-  - Cost function calculation.
-  - Gradient descent for optimization.
-- **Result:** Cost reduced after **normalization**.
+This repository contains multiple projects showcasing the application of **Machine Learning** and **Deep Learning** techniques to real-world problems.
 
 ---
 
-### 2. Matrix Approach
-- Dataset: Price vs Surface Area
-- Implemented linear regression using **matrix operations** (no iterations).
-- Steps:
-  - Data cleaning (missing values replaced by mean, type conversion).
-  - Added bias column with `np.hstack`.
-  - Computed parameters `theta` with matrix multiplication.
-  - Calculated cost function.
-- **Result:** Initial cost very high → optimized later with gradient descent.
+## 📂 Projects Overview
+
+### 1️⃣ Real Estate Price Prediction (Linear Regression)
+- **Objective:** Predict real estate prices based on surface area and sector (city/countryside).
+- **Methods:**
+  - Simple Linear Regression
+  - Matrix Approach
+  - Multiple Linear Regression
+- **Steps:**
+  - Data cleaning & preprocessing
+  - Visualization (scatter plots + regression lines)
+  - Cost function calculation
+  - Gradient Descent optimization
+  - Tkinter GUI for interactive price estimation
+- **Key Results:**
+  - Prices increase with surface area
+  - City properties are more expensive than countryside
+- 📄 See reports in `REGRESSION_LINEAIRE`
 
 ---
 
-### 3. Multiple Linear Regression + Interface
-- Dataset: Price vs Surface Area + Sector.
-- Implemented **multiple linear regression**.
-- Steps:
-  - Data cleaning + categorical encoding.
-  - Normalization to prevent overflow.
-  - Predictions separated by sector (City vs Countryside).
-  - Developed **Tkinter GUI** for user-friendly price estimation.
-- **Result:**  
-  - Price increases with surface area.  
-  - City properties are systematically more expensive than countryside ones.  
+### 2️⃣ Pneumonia Detection (Logistic Regression vs CNN)
+- **Objective:** Classify chest X-ray images into **"Normal"** vs **"Pneumonia"**.
+- **Image Preprocessing & Feature Extraction:**
+  - Renaming & resizing images (500x500)
+  - Feature extraction: Gabor filters, DCT, PHOG, Fourier Transform
+- **Models:**
+  - Logistic Regression (using extracted features)
+  - Convolutional Neural Network (**ResNet**, transfer learning)
+- **Evaluation Metrics:** Accuracy, Precision, Recall, F1-score
+- **Key Results:**
+  - Logistic Regression Accuracy: **95.45%**
+  - ResNet Accuracy: **64.29%**
+  - Conclusion: Simpler models can outperform deep learning on small/separable datasets
+- 📄 See code & report in `REGRESSION_LOGISTIQUE_CNN`
 
 ---
 
 ## ⚙️ Technologies Used
-- **Python** (Numpy, Pandas, Matplotlib, Tkinter)
-- **Jupyter Notebook**
+- **Python** (Numpy, Pandas, Matplotlib, Scikit-learn, TensorFlow/PyTorch, Tkinter)
+- **Anaconda / Jupyter Notebook**
 - **Excel/CSV datasets**
 
 ---
 
-## 📌 Notes
-These projects show the **evolution from simple to more complex models**:
-1. Simple linear regression
-2. Matrix approach
-3. Multiple linear regression with a GUI
+## 🎯 Notes
+- These projects highlight the **contrast between simple Machine Learning and advanced Deep Learning models**.  
+- They show how **data size, preprocessing, and feature extraction** can impact performance.  
+- They also demonstrate how to go from **basic regression models** to **real-world applications** with graphical interfaces and medical image classification.
 
 ---
 
-### 🚀 How to Use
+## 📌 Repository Structure
+```bash
+IA_machine_learning/
+│── README.md
+│
+├── REGRESSION_LINEAIRE/
+│   └── 1.regression_lineaire/
+│   └── 2.approche_matricielle/
+│   └── 3.regression_lineaire_multiple/
+│   └── README.md
+├── REGRESSION_LOGISTIQUE_CNN/
+│   └── 1.preprocessing_and_feature_extraction/
+│   └── 2.model_implementation_and_evaluation/
+│   └── README.md
+
+---
+
+## 🚀 How to Use
 1. Clone the repository:
    ```bash
-   git clone https://github.com/raniabls/real-estate-linear-regression.git
-
-2. Open the .pdf reports to read explanations.
+   git clone https://github.com/raniabls/ai-course-projects.git

@@ -63,3 +63,5 @@ These projects show the **evolution from simple to more complex models**:
 1. Clone the repository:
    ```bash
    git clone https://github.com/raniabls/real-estate-linear-regression.git
+
+2. Open the .pdf reports to read explanations.
